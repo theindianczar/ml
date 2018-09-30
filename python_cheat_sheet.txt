@@ -1,19 +1,19 @@
 
-#1 The info() method is useful to get a quick description of the data, in particular the total number of rows, and each attribute’s type and number of non-null values 
-housing.info()  
+#1 The info() method is useful to get a quick description of the data, in particular the total number of rows, and each attributeâ€™s type and number of non-null values 
+    housing.info()  
 
 #2 You can find out what categories exist and how many districts belong to each category by using the value_counts() method:
-housing["ocean_proximity"].value_counts()
+    housing["ocean_proximity"].value_counts()
 
 #3 The describe() method shows a summary of the numerical attributes , 
 # the null values are ignored 
-housing.describe()
+    housing.describe()
 
 #4 for showing the plot inline
-%matplotlib inline 
+    %matplotlib inline 
 
 #5 to plot histogram for all features in the dataset
 # bins represent the number of vertical blocks in histogram
 # figsize ( x,y) represents the length of x axis and y axis for ecah graph
-import matplotlib.pyplot as plt
-housing.hist(bins=50,figsize=(20,15))
+    import matplotlib.pyplot as plt
+    housing.hist(bins=50,figsize=(20,15))
